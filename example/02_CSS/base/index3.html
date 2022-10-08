@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(214, 212, 212);
+        }
+        .menu{
+            width: 15em;
+            background-color:rgb(153, 152, 152);
+            align-items: left;
+            padding: 10px;
+            margin-right: 10px;
+            display: inline-block;
+            float: left;
+        }
+        .content{
+            background-color: gray;
+            margin-bottom: 2em;
+            height: 141px;
+            padding: 10px;
+            
+        }
+        .footer{
+            background-color:blueviolet;
+            clear: both;
+        }
+        .img{
+            width: 50px;
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu"><h1>Блок навигации</h1>
+        Ширина блочных элементов<br>
+        По умолчанию ширина блока вычисляется автоматически и занимает все доступное пространство. Здесь следует оговорить, что под этим подразумевается. Например, если тег в коде документа присутствует один, то он занимает всю свободную ширину окна браузера и ширина блока будет равна 100%. Стоит поместить один тег  внутрь другого, как ширина внутреннего тега начинает исчисляться относительно его родителя, т.е. внешнего контейнера.
+    </div>
+    <div class="content">
+        <h1>Статья 1</h1>
+        Если сторона (граница или внутренний отступ) родительского элемента не указан, то внешний отступ дочернего элемента переходит на родителя
+
+    </div>
+    <div class="content" style="height: 175px;">
+        <h1>Статья 2</h1>
+        Если у двух соседних элементов имеется встречный отступ, то:<br>
+        Если оба имеют одинаковый знак, отступ берётся только больший по модулю, меньший отбрасывается<br>
+        Если оба имеют разные по знаку отступы – они складываются<br>
+
+        <div class="img">      
+            <img src="image/mail.jpg">
+        </div>
+    </div>
+        <div class="footer">
+            Подвал
+        </div>
+</html>
