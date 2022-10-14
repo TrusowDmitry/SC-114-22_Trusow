@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        } */
+        body{
+            margin: 0;
+            text-align: center;
+        }
+        li{
+            margin-bottom: 10px;
+        }
+        a{
+            text-decoration: none;
+        }
+        .topmenu > li {
+            width: 150px;
+            display: inline-block;
+            position: relative;
+            height: 20px;
+            text-align: center;
+            background: rgb(194, 191, 191);
+            -webkit-border-radius: 33px;
+            -moz-border-radius: 33px;
+            border-radius: 33px;
+            border: 2px solid #6b6b6b;
+        }
+        .submenu {
+            list-style-type: none;
+            position: absolute;
+            z-index: 4;
+            left: 50%;
+            top: 100%;
+            width: 140px;
+            padding: 10px 0 10px;
+            margin-top: 0px;
+            
+            background: rgb(194, 191, 191);
+            border: 2px solid  #6b6b6b;
+            border-radius: 5px;
+            box-shadow: 0 0 30px rgba(0,0,0,.2);
+            box-sizing: border-box;
+            visibility: hidden;
+            opacity: 0;
+            transform: translate(-50%, 20px);
+            transition: .3s;
+        }
+
+        .topmenu > li:hover .submenu {
+            visibility: visible;
+            opacity: 1;
+            transform: translate(-50%, 0);
+
+        }
+
+        @media screen and (max-width: 1200px) {
+            .topmenu > li{
+                display: block;
+            }
+            .submenu {
+                list-style-type: none;
+                position: absolute;
+                z-index: 4;
+                left: 140%;
+                top: 10%;
+                width: 140px;
+                padding: 10px 0 10px;
+                margin-top: 0px;            
+                background: rgb(194, 191, 191);
+                border: 2px solid  #6b6b6b;
+                border-radius: 5px;
+                box-shadow: 0 0 30px rgba(0,0,0,.2);
+                box-sizing: border-box;
+                visibility: hidden;
+                opacity: 0;
+                transform: translate(-50%, 20px);
+                transition: .3s;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <ul class="topmenu">
+        <li>Понедельник</a>
+            <ul class="submenu">
+                <li><a href="">Завтрак</a></li>
+                <li><a href="">Обед</a></li>
+                <li><a href="">Ужин</a></li>
+            </ul>
+        </li>
+        <li>Вторник
+            <ul class="submenu">
+                <li><a href="">Завтрак</a></li>
+                <li><a href="">Обед</a></li>
+                <li><a href="">Ужин</a></li>
+            </ul>
+        </li>
+        <li>Среда<ul class="submenu">
+                <li><a href="">Завтрак</a></li>
+                <li><a href="">Обед</a></li>
+                <li><a href="">Ужин</a></li>
+            </ul>
+        </li>
+        <li>Четверг</li>
+        <li>Пятница</li>
+        <li>Суббота</li>
+        <li>Воскресенье</li>
+    </ul>
+
+</body>
+</html>
