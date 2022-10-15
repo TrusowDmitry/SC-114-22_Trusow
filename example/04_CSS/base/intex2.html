@@ -12,15 +12,29 @@
             border-bottom-color: rgb(131, 125, 120);
         }
 
+        tr:nth-child(2n+1) { 
+            background-color:rgb(207, 207, 207) 
+        } 
+
         tr:nth-child(1){
             text-align: center;
             background-color: rgb(131, 125, 120);
         }
 
         td:nth-last-child(1){
-            border-right-style: none;
+            border-right-style: none;   
         }
-
+        
+        tbody tr:hover {
+            background: #ffe8b6;  
+        }
+        tr:last-child{
+            text-align: center; 
+            background-color: white;
+        }
+        tr:last-child td{
+            border-bottom-style: none
+        }
     </style>
         
 </head>
@@ -68,8 +82,17 @@
             <td>Иванов Иван Иванович</td>
         </tr>
         <tr>
-            <td colspan="6" style="text-align: center; border-bottom-style: none;">ДАННЫЕ О СОТРУДНИКАХ</td>
+            <td>Иванов Иван Иванович</td>
+            <td>Иванов Иван Иванович</td>
+            <td>Иванов Иван Иванович</td>
+            <td>Иванов Иван Иванович</td>
+            <td>Иванов Иван Иванович</td>
+            <td>Иванов Иван Иванович</td>
+        </tr>
+        <tr>
+            <td colspan="6">ДАННЫЕ О СОТРУДНИКАХ</td>
         </tr>
     </table>
+    
 </body>
 </html>

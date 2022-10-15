@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            padding: 1px 20px;
+        }
+        .block{
+            border: 1px solid #000000;
+            border-radius: 0px 20px 0px 20px;
+            padding: 5px 20px;
+        }
+        a{
+            color: blue;
+        }
+        a:visited{
+            color: blue;
+        }
+        a[href$='.doc']::after{
+            content: url(image/word.jpg);
+        }
+        a[href$='.pdf']::after{
+            content: url(image/pdf.png);
+        }
+        a[href$='.zip']::after{
+            content: url(image/zip.gif);
+        }
+        a[name='file']::before{
+            content: url(image/file.png);
+            
+        }
+        a[name='bottom']::before{
+            content: url(image/docs.jpg);    
+        }
+    </style>
+</head>
+<body>
+    <h1>Форматы файлов.</h1>
+    <div class="block">
+        Здесь должно быть много текста, который совсем лень набирать (от англ. <a name="file" href="">document</a>)<br>
+        <a href="test.doc">Документ MS Word</a>
+    </div>
+    <div class="block">
+        Здесь должно быть что-то про PDF (<a name="file" href="">PDF</a>)<br>
+        <a href="test.pdf">Документ PDF</a>
+    </div>
+    <div class="block">
+        Здесь должно быть что-то про ZIP (<a name="file" href="">.zip</a>)<br>
+        <a href="test.zip">Архив</a>
+    </div>
+    <h2>Это список файлов:</h2>
+    <div>
+        <a name="bottom" href="">Документ MS Word</a><br>
+        <a name="bottom" href="">Документ PDF</a><br>
+        <a name="bottom" href="">Архив</a>
+    </div>
+</body>
+</html>
